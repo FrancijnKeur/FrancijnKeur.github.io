@@ -1,0 +1,55 @@
+/* Remove that annoying white gap at the very top and sides */
+body {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+  display: flex;             /* Modern layout magic */
+  align-items: center;       /* Centers them vertically */
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 10 10px;           /* Side padding for the bar */
+  margin: 10px;
+  height: 80px;              /* Match your p5.js canvas height */
+  width: auto;
+}
+
+/* Make sure the p5.js canvas doesn't create extra space */
+#logo-container canvas {
+  display: block;
+  border-radius: 4px;
+}
+
+.header-right {
+    height: 80px;
+    padding: 20px;
+    width: auto;
+}
+.header-right a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.header-right a.active {
+  background-color: rgb(71, 129, 69);
+  color: black;
+  border-radius: 4px;
+}
+
+.header-right a:hover {
+  background-color: rgb(71, 129, 69);
+  color: black;
+  border-radius: 4px;
+}
+
+/* This is the container for the "rest of the page" */
+.content {
+    padding: 20px;
+    clear: both;
+}
+
